@@ -1,0 +1,196 @@
+# Aspose.3D Wavefront OBJ Exporter
+# Copyright 2004-2022 Aspose Pty Ltd.
+# File created: 12/08/2022 14:38:57
+
+newmtl mat_36845853
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_14717093
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_2975838
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_5036641
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_18931215
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_43439697
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_45658585
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_14101855
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_52905955
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_358640
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_49133782
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_20441838
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_49068506
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_11498945
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_31851670
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_1602640
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_18235186
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_15192580
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_1008727
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_3977924
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_8104748
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_36608761
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_49344346
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
+newmtl mat_49289098
+	Ka 0.2 0.2 0.2
+	Kd 1 1 1
+	d 1
+	Tr 0
+	illum 2
+	Ks 1 1 1
+	Ns 20
