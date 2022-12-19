@@ -8,7 +8,7 @@ public class rotateBottle : MonoBehaviour
     public bool Rotate =true;
     public bool pickup;
     public bool drop;
-    
+    public GameObject txt;
     public Transform endPoint;
     public float speed;
 
@@ -31,6 +31,13 @@ public class rotateBottle : MonoBehaviour
             transform.rotation = hand.transform.rotation;
             transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
 
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                pickup = false;
+                drop = true;
+                txt.GetComponent<bottlecount>().count += 1;
+            }
+
         }
         else if (drop)
         {
@@ -43,7 +50,7 @@ public class rotateBottle : MonoBehaviour
             // Move the object towards the target point at the specified speed
             transform.position = Vector3.MoveTowards(transform.position, endPoint.position, speed * Time.deltaTime);
 
-
+            Invoke("DestroyObject", 5f);
 
 
 
@@ -54,9 +61,12 @@ public class rotateBottle : MonoBehaviour
         }
         
     }
-    
-        
-    
+
+    void DestroyObject()
+    {
+        Destroy(gameObject);
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
