@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotateBottle : MonoBehaviour
+public class rotate_pickup : MonoBehaviour
 {
     public GameObject hand;
     public bool Rotate =true;
