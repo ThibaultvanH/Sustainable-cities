@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class rotateBottle : MonoBehaviour
 {
+    public GameObject trash;
     public GameObject hand;
     public bool Rotate =true;
     public bool pickup;
     public bool drop;
+    public bool closeby =false;
     public GameObject txt;
     public Transform endPoint;
     public float speed;
@@ -31,17 +33,19 @@ public class rotateBottle : MonoBehaviour
             transform.rotation = hand.transform.rotation;
             transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
 
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.D) && trash.GetComponent<opentrash>().open )
             {
-                pickup = false;
+                
                 drop = true;
+                pickup = false;
                 txt.GetComponent<bottlecount>().count += 1;
             }
 
         }
-        else if (drop)
+         if (drop)
         {
-
+            
+            
             Vector3 direction = endPoint.position - transform.position;
 
             // Normalize the direction to get a unit vector (a vector with a length of 1)
@@ -58,6 +62,8 @@ public class rotateBottle : MonoBehaviour
         else if (Rotate)
         {
             transform.RotateAround(transform.position, Vector3.up, 40f * Time.deltaTime);
+            float y = 1f +(0.5f * Mathf.Sin(Time.time * 1f));
+            transform.position = new Vector3(transform.position.x, y, transform.position.z);
         }
         
     }

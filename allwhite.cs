@@ -6,6 +6,7 @@ public class allwhite : MonoBehaviour
 {
     public Material newMaterial;
     public Material oldmaterial;
+    public GameObject arrow;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,48 @@ public class allwhite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        findClossestBottle();
+    }
+
+    private void findClossestBottle()
+    {
+        GameObject[] bottles = GameObject.FindGameObjectsWithTag("bottle");
+
         
+        float minDistance = float.MaxValue;
+
+        
+        GameObject closestBottle = null;
+
+        foreach (GameObject bottle in bottles)
+        {
+            
+            float distance = Vector3.Distance(transform.position, bottle.transform.position);
+
+            
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                closestBottle = bottle;
+                
+            }
+            if (distance < 4)
+            {
+                closestBottle = null;
+            }
+        }
+
+        if (closestBottle != null)
+        {
+            arrow.SetActive(true);
+            arrow.transform.LookAt(closestBottle.transform);
+        }
+        // If there is no closest bottle, make the arrow invisible
+        else
+        {
+            arrow.SetActive(false);
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)

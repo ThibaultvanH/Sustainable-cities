@@ -5,7 +5,7 @@ using UnityEngine;
 public class opentrash : MonoBehaviour
 {
     public GameObject lid;
-    private bool open;
+    public bool open;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +22,7 @@ public class opentrash : MonoBehaviour
                 lid.transform.Rotate(-Vector3.right * Time.deltaTime * 80f);
             }
             
-            Debug.Log(lid.transform.rotation.x);
+            
         }
         else
         {
@@ -41,6 +41,9 @@ public class opentrash : MonoBehaviour
             open = true;
         }
         
+            
+        
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -50,5 +53,6 @@ public class opentrash : MonoBehaviour
             open = false;
         }
         
+
     }
 }
