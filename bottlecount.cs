@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class bottlecount : MonoBehaviour
 {
     public int count = 0;
+    public bool inhand = false;
     public GameObject txt;
     
     // Start is called before the first frame update

@@ -13,6 +13,7 @@ public class rotateBottle : MonoBehaviour
     public GameObject txt;
     public Transform endPoint;
     public float speed;
+    public GameObject player;
 
    
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class rotateBottle : MonoBehaviour
                 
                 drop = true;
                 pickup = false;
+                player.GetComponent<bottlecount>().inhand = false;
                 txt.GetComponent<bottlecount>().count += 1;
             }
 
@@ -76,8 +78,9 @@ public class rotateBottle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && Rotate)
+        if (other.tag == "Player" && Rotate && player.GetComponent<bottlecount>().inhand == false )
         {
+            player.GetComponent<bottlecount>().inhand = true;
             Debug.Log("hit");
             pickup = true;
             Rotate = false;

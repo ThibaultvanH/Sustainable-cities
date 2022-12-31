@@ -12,18 +12,26 @@ public class allwhite : MonoBehaviour
     void Start()
     {
         GameObject[] objects = FindObjectsOfType<GameObject>();
+        Material[] originalMaterials = new Material[objects.Length];
+
 
         // Iterate over all objects
-        foreach (GameObject obj in objects)
+        for (int i = 0; i < objects.Length; i++)
         {
+            GameObject obj = objects[i];
+            
             // Check if the object has a renderer component
             Renderer renderer = obj.GetComponent<Renderer>();
             if (renderer != null && obj.tag != "bottle" && obj.tag != "trash" && obj.tag != "Player")
             {
+                originalMaterials[i] = renderer.material;
                 // Assign the new material to the renderer
+                
                 renderer.material = newMaterial;
             }
         }
+        
+
     }
 
     // Update is called once per frame
