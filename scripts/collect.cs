@@ -16,7 +16,8 @@ public class collect : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            
+            count.score += 1;
+            Destroy(gameObject);
         }
     }
 }
