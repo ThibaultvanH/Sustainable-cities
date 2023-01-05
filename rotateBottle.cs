@@ -34,7 +34,7 @@ public class rotateBottle : MonoBehaviour
             transform.rotation = hand.transform.rotation;
             transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
 
-            if (Input.GetKeyDown(KeyCode.D) && trash.GetComponent<opentrash>().open )
+            if (Input.GetKeyDown(KeyCode.E) && trash.GetComponent<opentrash>().open )
             {
                 
                 drop = true;

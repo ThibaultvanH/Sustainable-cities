@@ -5,14 +5,17 @@ using UnityEngine;
 public class allwhite : MonoBehaviour
 {
     public Material newMaterial;
-    public Material oldmaterial;
+    Material[] originalMaterials;
+    GameObject[] objects;
+
     public GameObject arrow;
+    public GameObject points;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject[] objects = FindObjectsOfType<GameObject>();
-        Material[] originalMaterials = new Material[objects.Length];
+         objects = FindObjectsOfType<GameObject>();
+        originalMaterials = new Material[objects.Length];
 
 
         // Iterate over all objects
@@ -25,6 +28,7 @@ public class allwhite : MonoBehaviour
             if (renderer != null && obj.tag != "bottle" && obj.tag != "trash" && obj.tag != "Player")
             {
                 originalMaterials[i] = renderer.material;
+                Debug.Log(renderer.material.name);
                 // Assign the new material to the renderer
                 
                 renderer.material = newMaterial;
@@ -38,6 +42,79 @@ public class allwhite : MonoBehaviour
     void Update()
     {
         findClossestBottle();
+        bottledeposit();
+        
+        }
+
+    void bottledeposit()
+    {
+        
+        switch (points.GetComponent<bottlecount>().count)
+        {
+            case 0:
+                break;
+            case 1:
+                for (int i = 0; i < originalMaterials.Length; i++)
+                {
+                    if (objects[i] != null)
+                    {
+                        if (objects[i]?.tag == "eik")
+                    {
+                        objects[i].GetComponent<Renderer>().material = originalMaterials[i];
+                    }
+                    }
+                    
+                }
+                break;
+            case 2:
+                for (int i = 0; i < originalMaterials.Length; i++)
+                {
+                    if (objects[i] != null)
+                    {
+                        if (objects[i]?.tag == "den")
+                        {
+                            objects[i].GetComponent<Renderer>().material = originalMaterials[i];
+                        }
+                    }
+                }
+                break;
+            case 3:
+                for (int i = 0; i < originalMaterials.Length; i++)
+                {
+                    if (objects[i] != null)
+                    {
+                        if (objects[i]?.tag == "house")
+                        {
+                            objects[i].GetComponent<Renderer>().material = originalMaterials[i];
+                        }
+                    }
+                }
+                break;
+            case 4:
+                for (int i = 0; i < originalMaterials.Length; i++)
+                {
+                    if (objects[i] != null)
+                    {
+                        if (objects[i]?.tag == "road")
+                        {
+                            objects[i].GetComponent<Renderer>().material = originalMaterials[i];
+                        }
+                    }
+                }
+                break;
+            case 5:
+                for (int i = 0; i < originalMaterials.Length; i++)
+                {
+                    if (objects[i] != null && objects[i].GetComponent<Renderer>() != null && objects[i].GetComponent<Renderer>().tag != "bottle" && objects[i].GetComponent<Renderer>().tag != "trash" && objects[i].GetComponent<Renderer>().tag != "Player")
+                    
+                        objects[i].GetComponent<Renderer>().material = originalMaterials[i];
+                    
+                }
+                break;
+            default:
+                break;
+        }
+        
     }
 
     private void findClossestBottle()
