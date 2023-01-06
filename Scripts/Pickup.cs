@@ -28,7 +28,6 @@ public class Pickup : MonoBehaviour
             Inventory.AddSapling();
             Destroy(gameObject);
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
