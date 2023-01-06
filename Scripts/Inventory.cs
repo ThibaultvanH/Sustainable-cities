@@ -18,6 +18,11 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public static float GetSaplingCount()
+    {
+        return saplingCount;
+    }
+
     public static void AddSapling()
     {
         saplingCount++;
