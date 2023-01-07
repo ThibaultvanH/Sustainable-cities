@@ -6,6 +6,8 @@ public class finish : MonoBehaviour
 {
     public Material newMaterial;
     public Material oldmaterial;
+
+    public bool hasfinished = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class finish : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && count.score == 4)
         {
+            hasfinished = true;
+
             GameObject[] objects = FindObjectsOfType<GameObject>();
 
             // Iterate over all objects
@@ -34,6 +38,8 @@ public class finish : MonoBehaviour
                     renderer.material = newMaterial;
                 }
             }
+
         }
     }
+
 }

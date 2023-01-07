@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class count : MonoBehaviour
 {
@@ -14,11 +15,11 @@ public class count : MonoBehaviour
     public void setscore(float scoretoadd)
     {
         score += scoretoadd;
-        //scoretext.GetComponent<Text>().text = score.ToString("F0");
+        scoretext.GetComponent<Text>().text = score.ToString("F0");
     }
     // Update is called once per frame
     void Update()
     {
-        //scoretext.GetComponent<Text>().text = score.ToString("F0");
+        scoretext.GetComponent<Text>().text = score.ToString("F0");
     }
 }
