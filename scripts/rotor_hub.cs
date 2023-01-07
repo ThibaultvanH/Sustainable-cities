@@ -15,7 +15,10 @@ public class rotor_hub : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        transform.Rotate(new Vector3(0, 0, 20) * speed * Time.deltaTime);
+        if (MyGameManager.hasfinished == 1)
+        {
+            //transform.Rotate(Vector3.forward * speed * Time.deltaTime);
+            transform.Rotate(new Vector3(0, 0, 20) * speed * Time.deltaTime);
+        }
     }
 }

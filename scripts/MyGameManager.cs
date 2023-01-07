@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using System;
 
 
 public class MyGameManager : MonoBehaviour
@@ -10,7 +12,7 @@ public class MyGameManager : MonoBehaviour
     public GameObject playingCanvas;
     public GameObject pausedCanvas;
     public GameObject finishedCanvas;
-
+    public static float hasfinished = 0;
     public string nextlevel;
 
     finish finish = new finish();
@@ -26,6 +28,7 @@ public class MyGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hasfinished = 0;
         playingCanvas.SetActive(true);
         pausedCanvas.SetActive(false);
         finishedCanvas.SetActive(false);
@@ -45,8 +48,7 @@ public class MyGameManager : MonoBehaviour
         {
             case GameStates.Playing:
 
-                playingCanvas.SetActive(true);
-                if (finish.hasfinished == true)
+                if (hasfinished == 1)
                 {
                     gameState = GameStates.LevelFinish;
                     playingCanvas.SetActive(false);
@@ -63,32 +65,17 @@ public class MyGameManager : MonoBehaviour
                 {
                     gameState = GameStates.Playing;
                     pausedCanvas.SetActive(false);
+                    playingCanvas.SetActive(true);
                 }
                 break;
             case GameStates.LevelFinish:
-
                 finishedCanvas.SetActive(true);
-                StartCoroutine(gameover());
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    SceneManager.LoadScene(nextlevel);
+                }
 
                 break;
         }
-    }
-    private IEnumerator gameover()
-    {
-        yield return waitforkeypress(KeyCode.Return);
-        SceneManager.LoadScene(nextlevel);
-    }
-
-    private IEnumerator waitforkeypress(KeyCode key)
-    {
-        bool done = false;
-        while (!done)
-        {
-            if (Input.GetKeyDown(key))
-            {
-                done = true;
-            }
-        }
-        yield return null;
     }
 }

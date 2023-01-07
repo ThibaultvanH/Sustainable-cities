@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonLevelLoad : MonoBehaviour
+public class quit_button : MonoBehaviour
 {
+    // Start is called before the first frame update
     public string mLevelToLoad;
     public void LoadLevel()
     {
         //Load the new level (mLevelToLoad)
 
-        SceneManager.LoadScene(mLevelToLoad);
-
         count.score = 0;
     }
-
 }

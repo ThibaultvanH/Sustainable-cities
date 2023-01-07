@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class finish : MonoBehaviour
 {
     public Material newMaterial;
     public Material oldmaterial;
 
-    public bool hasfinished = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,10 @@ public class finish : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.tag == "Player" && count.score == 4)
         {
-            hasfinished = true;
+            MyGameManager.hasfinished = 1;
 
             GameObject[] objects = FindObjectsOfType<GameObject>();
 
