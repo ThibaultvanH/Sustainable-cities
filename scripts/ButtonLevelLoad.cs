@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class ButtonLevelLoad : MonoBehaviour
 {
     public string mLevelToLoad;
-
+    public string LevelToUnload;
     public void LoadLevel()
     {
         //Load the new level (mLevelToLoad)
+
         SceneManager.LoadScene(mLevelToLoad);
+
         count.score = 0;
     }
 
