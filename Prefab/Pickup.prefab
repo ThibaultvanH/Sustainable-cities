@@ -193,6 +193,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7387378045307130284, guid: 50c1a85ac1e80e249a2402aff4ca9b46, type: 3}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     - target: {fileID: 8257622255143123444, guid: 50c1a85ac1e80e249a2402aff4ca9b46, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -256,6 +260,10 @@ PrefabInstance:
     - target: {fileID: 8778403100652872526, guid: 50c1a85ac1e80e249a2402aff4ca9b46, type: 3}
       propertyPath: m_Name
       value: gear
+      objectReference: {fileID: 0}
+    - target: {fileID: 8778403100652872526, guid: 50c1a85ac1e80e249a2402aff4ca9b46, type: 3}
+      propertyPath: m_TagString
+      value: pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50c1a85ac1e80e249a2402aff4ca9b46, type: 3}

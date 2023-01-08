@@ -10,6 +10,7 @@ public class pause_button : MonoBehaviour
     {
         GameManager.GetComponent<MyGameManager>().gameState = MyGameManager.GameStates.Playing;
         GameManager.GetComponent<MyGameManager>().pausedCanvas.SetActive(false);
+        GameManager.GetComponent<MyGameManager>().playingCanvas.SetActive(true);
     }
 
 }

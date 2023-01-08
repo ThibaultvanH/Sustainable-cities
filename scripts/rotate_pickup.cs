@@ -5,14 +5,14 @@ using UnityEngine;
 public class rotate_pickup : MonoBehaviour
 {
     public GameObject hand;
-    public bool Rotate =true;
+    public bool Rotate = true;
     public bool pickup;
     public bool drop;
     public GameObject txt;
     public Transform endPoint;
     public float speed;
 
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +59,7 @@ public class rotate_pickup : MonoBehaviour
         {
             transform.RotateAround(transform.position, Vector3.up, 40f * Time.deltaTime);
         }
-        
+
     }
 
     void DestroyObject()
@@ -72,11 +72,10 @@ public class rotate_pickup : MonoBehaviour
     {
         if (other.tag == "Player" && Rotate)
         {
-            Debug.Log("hit");
             pickup = true;
             Rotate = false;
         }
 
-        
+
     }
 }

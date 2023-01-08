@@ -35,7 +35,7 @@ public class finish : MonoBehaviour
             {
                 // Check if the object has a renderer component
                 Renderer renderer = obj.GetComponent<Renderer>();
-                if (renderer != null && obj.tag != "bottle" && obj.tag != "trash" && obj.tag != "Player")
+                if (renderer != null && obj.tag != "pickup" && obj.tag != "windturbine" && obj.tag != "Player")
                 {
                     // Assign the new material to the renderer
                     renderer.material = newMaterial;

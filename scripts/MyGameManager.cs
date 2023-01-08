@@ -14,8 +14,6 @@ public class MyGameManager : MonoBehaviour
     public GameObject finishedCanvas;
     public static float hasfinished = 0;
     public string nextlevel;
-
-    finish finish = new finish();
     public enum GameStates
     {
         Playing,
@@ -47,7 +45,6 @@ public class MyGameManager : MonoBehaviour
         switch (gameState)
         {
             case GameStates.Playing:
-
                 if (hasfinished == 1)
                 {
                     gameState = GameStates.LevelFinish;
