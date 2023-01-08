@@ -5,13 +5,11 @@ using UnityEngine;
 
 public class pause_button : MonoBehaviour
 {
-    MyGameManager gameManager;
+    public GameObject GameManager;
     public void unpause()
     {
-        gameManager.gameState = MyGameManager.GameStates.Playing;
-        gameManager.pausedCanvas.SetActive(false);
-
-
+        GameManager.GetComponent<MyGameManager>().gameState = MyGameManager.GameStates.Playing;
+        GameManager.GetComponent<MyGameManager>().pausedCanvas.SetActive(false);
     }
 
 }
