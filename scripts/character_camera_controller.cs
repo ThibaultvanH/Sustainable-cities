@@ -9,7 +9,8 @@ public class character_camera_controller : MonoBehaviour
     private float xRotation = 0.0f;
     private float yRotation = 0.0f;
     public MyGameManager manager;
-    private Camera cam;
+    Camera cam;
+    //private Camera cam;
     void Start()
     {
         cam = Camera.main;

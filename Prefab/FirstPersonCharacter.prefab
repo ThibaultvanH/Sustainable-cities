@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 747424054023951284}
   - component: {fileID: 747424054023951290}
   - component: {fileID: 747424054023951291}
+  - component: {fileID: 4602092356260569300}
   m_Layer: 0
   m_Name: FirstPersonCharacter
   m_TagString: Player
@@ -151,7 +152,21 @@ MonoBehaviour:
   manager: {fileID: 0}
   MovementSpeed: 5
   SprintSpeed: 3
-  Gravity: 9.8
+  Gravity: 9
+--- !u!114 &4602092356260569300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747424054023951308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c784e096f068fb849b03741339d3866e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  audioClip2: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
 --- !u!1 &747424054428856322
 GameObject:
   m_ObjectHideFlags: 0
