@@ -6,19 +6,18 @@ public class Planter : MonoBehaviour
 {
     public Transform spawnPos;
     public GameObject sapling;
-    public float growSpeed;
     
     
     private bool spawned;
     public bool planted;
+    private bool growing;
     private GameObject clonedSapling;
     
     // Start is called before the first frame update
     void Start()
     {
         spawned = false;
-        if (growSpeed == 0)
-            growSpeed = 0.2f;
+        growing = false;
     }
 
     // Update is called once per frame
@@ -28,18 +27,25 @@ public class Planter : MonoBehaviour
         {
             if(!spawned)
             {
+                
                 clonedSapling = Instantiate(sapling, spawnPos.position, Quaternion.identity);
                 clonedSapling.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
                 spawned = true;
+                growing = true;
             }
-            else 
+            else if(growing)
             {
-                while (clonedSapling.transform.localScale.x < 1)
-                {
-                    clonedSapling.transform.localScale += new Vector3(0.01f, 0.01f, 0.01f) * Time.deltaTime * growSpeed;
-                }
+                StartCoroutine(GrowCoroutine());
             }
         }
+    }
+
+    IEnumerator GrowCoroutine(){
+        var num = Random.Range(2, 10);
+        yield return new WaitForSeconds(num);
+
+        clonedSapling.transform.localScale = new Vector3(1f, 1f, 1f);
+        growing = false;
     }
 
     private void OnTriggerEnter(Collider other)
