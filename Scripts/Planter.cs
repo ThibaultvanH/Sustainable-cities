@@ -32,6 +32,7 @@ public class Planter : MonoBehaviour
                 clonedSapling.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
                 spawned = true;
                 growing = true;
+                Inventory.AddPoint();
             }
             else if(growing)
             {
@@ -41,7 +42,7 @@ public class Planter : MonoBehaviour
     }
 
     IEnumerator GrowCoroutine(){
-        var num = Random.Range(2, 10);
+        var num = Random.Range(5, 20);
         yield return new WaitForSeconds(num);
 
         clonedSapling.transform.localScale = new Vector3(1f, 1f, 1f);
