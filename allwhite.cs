@@ -31,8 +31,6 @@ public class allwhite : MonoBehaviour
                 Debug.Log(renderer.material.name);
                 // Assign the new material to the renderer
                 
-
-
                 renderer.material = newMaterial;
             }
         }
