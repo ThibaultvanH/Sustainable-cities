@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a110115b3c9c7b4fbb8865d2b1d9ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  audioClip2: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   horizontalSpeed: 4
   verticalSpeed: 4
   manager: {fileID: 0}
@@ -165,6 +167,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c784e096f068fb849b03741339d3866e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 747424054428856320}
+  manager: {fileID: 0}
+  MovementSpeed: 5
+  SprintSpeed: 2
+  Gravity: 9
   audioClip: {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   audioClip2: {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
 --- !u!1 &747424054428856322
