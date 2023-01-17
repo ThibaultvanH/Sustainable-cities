@@ -5,7 +5,7 @@ using UnityEngine;
 public class allwhite : MonoBehaviour
 {
     public Material newMaterial;
-    public Material oldmaterial;
+    public string ignoreTag;
 
     // Start is called before the first frame update
     void Start()
@@ -17,11 +17,11 @@ public class allwhite : MonoBehaviour
         {
             // Check if the object has a renderer component
             Renderer renderer = obj.GetComponent<Renderer>();
-            if (renderer != null && obj.tag != "bottle" && obj.tag != "trash" && obj.tag != "Player")
+            if (renderer != null && obj.tag != ignoreTag)
             {
                 // Assign the new material to the renderer
                 renderer.material = newMaterial;
-            }
+             }
         }
     }
 
