@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     public float rotateSpeed;
     public float bobSpeed;
+    public AudioClip audioClip;
 
     private bool pickedUp;
 
@@ -25,6 +26,12 @@ public class Pickup : MonoBehaviour
             transform.position = new Vector3(transform.position.x, y, transform.position.z);
         }
         else {
+            if(audioClip){
+                if(gameObject.GetComponent<AudioSource>())
+                    gameObject.GetComponent<AudioSource>().PlayOneShot(audioClip);
+                else
+                    AudioSource.PlayClipAtPoint(audioClip, transform.position);
+            }
             Inventory.AddSapling();
             Destroy(gameObject);
         }
