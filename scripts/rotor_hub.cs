@@ -15,7 +15,11 @@ public class rotor_hub : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Rotate(Vector3.forward * speed * Time.deltaTime);
-        transform.Rotate(new Vector3(0, 0, 20) * speed * Time.deltaTime);
+        //check if the level is finished
+        if (MyGameManager.hasfinished == 1)
+        {
+            //rotate the blades of the windturbine
+            transform.Rotate(new Vector3(0, 0, 20) * speed * Time.deltaTime);
+        }
     }
 }
