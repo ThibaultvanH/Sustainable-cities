@@ -17,8 +17,10 @@ public class character_camera_controller : MonoBehaviour
     }
     void Update()
     {
+        //check if game is paused
         if (manager.gameState != MyGameManager.GameStates.Paused)
         {
+            //rotate camera with mousemovement
             float mouseX = Input.GetAxis("Mouse X") * horizontalSpeed;
             float mouseY = Input.GetAxis("Mouse Y") * verticalSpeed;
             yRotation += mouseX;

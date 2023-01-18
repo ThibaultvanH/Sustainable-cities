@@ -23,9 +23,10 @@ public class finish : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-        if (other.gameObject.tag == "Player" && count.score == 4)
+        //check if the player ran into the pickup and his score is 4
+        if (other.gameObject.tag == "Player" && count.score >= 4)
         {
+            //set the gamemanager on stage finished
             MyGameManager.hasfinished = 1;
 
             GameObject[] objects = FindObjectsOfType<GameObject>();
@@ -37,7 +38,7 @@ public class finish : MonoBehaviour
                 Renderer renderer = obj.GetComponent<Renderer>();
                 if (renderer != null && obj.tag != "pickup" && obj.tag != "windturbine" && obj.tag != "Player")
                 {
-                    // Assign the new material to the renderer
+                    // Assign the new material to the renderer to return to the colored state
                     renderer.material = newMaterial;
                 }
             }

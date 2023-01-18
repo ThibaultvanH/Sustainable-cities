@@ -15,8 +15,10 @@ public class collect : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        //check if the player ran into the pickup
         if (other.gameObject.tag == "Player")
         {
+            //check if an audiosource exists on the gameobject
             if (audioClip)
             {
                 if (gameObject.GetComponent<AudioSource>())
@@ -31,6 +33,7 @@ public class collect : MonoBehaviour
                     AudioSource.PlayClipAtPoint(audioClip, transform.position);
                 }
             }
+            //add 1 to the score en destroy the audio source gameobject
             count.score += 1;
             Destroy(gameObject);
         }
