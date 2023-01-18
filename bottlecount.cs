@@ -20,6 +20,6 @@ public class bottlecount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count;
+        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count + "/5";
     }
 }
