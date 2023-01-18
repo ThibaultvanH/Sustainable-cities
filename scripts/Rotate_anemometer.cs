@@ -14,6 +14,7 @@ public class Rotate_anemometer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rotate the anemometer on top of the windturbine
         transform.Rotate(new Vector3(0, 20, 0) * speed * Time.deltaTime);
     }
 }

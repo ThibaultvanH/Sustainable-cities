@@ -8,10 +8,11 @@ public class ButtonLevelLoad : MonoBehaviour
     public string mLevelToLoad;
     public void LoadLevel()
     {
-        //Load the new level (mLevelToLoad)
+        //Load the new level (LevelToLoad)
 
         SceneManager.LoadScene(mLevelToLoad);
 
+        //reset score
         count.score = 0;
     }
 

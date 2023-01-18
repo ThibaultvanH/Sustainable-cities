@@ -21,7 +21,9 @@ public class character_audio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //create small delay between footsteps
         timeDelay = 0.5f;
+        //if character is sprinting reduce the interval time
         if (Input.GetKey(KeyCode.LeftShift))
         {
             timeDelay = 0.25f;
@@ -31,10 +33,13 @@ public class character_audio : MonoBehaviour
         if (time >= timeDelay)
         {
             time = 0f;
+            //check if character is moving
             if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
             {
+                //check if audioclip exists
                 if (audioClip)
                 {
+                    //check if an audiosource exists on the gameobject
                     if (gameObject.GetComponent<AudioSource>())
                     {
                         //gameobject has audiosource

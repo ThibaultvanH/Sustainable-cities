@@ -17,19 +17,25 @@ public class character_movement : MonoBehaviour
     }
     void Update()
     {
+        //check if game is paused
         if (manager.gameState != MyGameManager.GameStates.Paused)
         {
 
+            //check if shift is pressed to start sprinting
             if (Input.GetKey(KeyCode.LeftShift))
             {
+                //move character with the horizontal en vertical axis
                 characterController.Move((cam.transform.right * Input.GetAxis("Horizontal") * MovementSpeed + cam.transform.forward * Input.GetAxis("Vertical") * MovementSpeed * SprintSpeed) * Time.deltaTime);
             }
             else
             {
+                //move character with the horizontal en vertical axis
                 characterController.Move((cam.transform.right * Input.GetAxis("Horizontal") * MovementSpeed + cam.transform.forward * Input.GetAxis("Vertical") * MovementSpeed) * Time.deltaTime);
             }
+            //check of character op de grond staat
             if (!characterController.isGrounded)
             {
+                //apply gravity to character in the air
                 velocity -= Gravity * Time.deltaTime;
                 characterController.Move(new Vector3(0, velocity, 0));
             }
