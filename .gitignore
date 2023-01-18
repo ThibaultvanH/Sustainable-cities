@@ -53,4 +53,8 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Mac OS Finder files
+<<<<<<< HEAD
 *.DS_Store
+=======
+*.DS_Store
+>>>>>>> d54785861c2240e57e523163cf6b53b572d20533
