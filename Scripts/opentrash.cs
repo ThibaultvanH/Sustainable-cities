@@ -5,7 +5,7 @@ using UnityEngine;
 public class opentrash : MonoBehaviour
 {
     public GameObject lid;
-    private bool open;
+    public bool open;
     // Start is called before the first frame update
     void Start()
     {

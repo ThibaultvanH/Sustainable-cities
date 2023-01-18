@@ -2795,6 +2795,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1790920912}
   - component: {fileID: 1790920913}
+  - component: {fileID: 1790920916}
+  - component: {fileID: 1790920915}
   - component: {fileID: 1790920914}
   m_Layer: 0
   m_Name: GameManager
@@ -2845,11 +2847,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 1790920911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b08f49f3e3fbf948b33fe2d8238e639, type: 3}
+  m_Script: {fileID: 11500000, guid: 44a54aa34aa51fc46bec71ce5e3d0d02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newMaterial: {fileID: 2100000, guid: 2b2e27f5882fa6344b39afb0039e7ad9, type: 2}
-  oldmaterial: {fileID: 0}
+  newMaterial: {fileID: 2100000, guid: b48bc822a7607334790507d088d0f956, type: 2}
+  ignoreTag: windturbine
+--- !u!114 &1790920915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790920911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a54aa34aa51fc46bec71ce5e3d0d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMaterial: {fileID: 2100000, guid: b48bc822a7607334790507d088d0f956, type: 2}
+  ignoreTag: Player
+--- !u!114 &1790920916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790920911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a54aa34aa51fc46bec71ce5e3d0d02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMaterial: {fileID: 2100000, guid: b48bc822a7607334790507d088d0f956, type: 2}
+  ignoreTag: pickup
 --- !u!1001 &1821820303
 PrefabInstance:
   m_ObjectHideFlags: 0
