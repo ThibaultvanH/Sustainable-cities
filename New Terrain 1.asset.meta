@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 6b519d00ebfcdb04f8f21ab9036477dc
 NativeFormatImporter:
   externalObjects: {}
+<<<<<<< HEAD
   mainObjectFileID: 15600000
+=======
+  mainObjectFileID: 0
+>>>>>>> Thibault
   userData: 
   assetBundleName: 
   assetBundleVariant: 

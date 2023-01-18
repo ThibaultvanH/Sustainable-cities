@@ -1,5 +1,13 @@
 fileFormatVersion: 2
 guid: 2ed830309d1c9f640a65bf22d9060af1
+<<<<<<< HEAD
 NativeFormatImporter:
   userData: 
   assetBundleName: 
+=======
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+>>>>>>> Thibault

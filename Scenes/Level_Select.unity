@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> Thibault
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -390,7 +394,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b1bec2f66a10c499a412bc22db375d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   mLevelToLoad: Level Thibault
+=======
+  mLevelToLoad: 
+>>>>>>> Thibault
 --- !u!1 &896199810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,4 +1208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b1bec2f66a10c499a412bc22db375d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   mLevelToLoad: Level Len
+=======
+  mLevelToLoad: 
+>>>>>>> Thibault

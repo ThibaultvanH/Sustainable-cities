@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class bottlecount : MonoBehaviour
 {
     public int count = 0;
+    public bool inhand = false;
     public GameObject txt;
     
     // Start is called before the first frame update
@@ -19,6 +20,6 @@ public class bottlecount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count;
+        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count + "/5";
     }
 }

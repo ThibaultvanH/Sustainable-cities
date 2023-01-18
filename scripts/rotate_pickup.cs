@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class rotate_pickup : MonoBehaviour
 {
+    public GameObject trash;
     public GameObject hand;
     public bool Rotate = true;
     public bool pickup;
     public bool drop;
+    public bool closeby =false;
     public GameObject txt;
     public Transform endPoint;
     public float speed;
+    public GameObject player;
 
 
     // Start is called before the first frame update
@@ -31,17 +34,20 @@ public class rotate_pickup : MonoBehaviour
             transform.rotation = hand.transform.rotation;
             transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
 
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.E) && trash.GetComponent<opentrash>().open )
             {
-                pickup = false;
+                
                 drop = true;
+                pickup = false;
+                player.GetComponent<bottlecount>().inhand = false;
                 txt.GetComponent<bottlecount>().count += 1;
             }
 
         }
-        else if (drop)
+         if (drop)
         {
-
+            
+            
             Vector3 direction = endPoint.position - transform.position;
 
             // Normalize the direction to get a unit vector (a vector with a length of 1)
@@ -58,6 +64,8 @@ public class rotate_pickup : MonoBehaviour
         else if (Rotate)
         {
             transform.RotateAround(transform.position, Vector3.up, 40f * Time.deltaTime);
+            float y = 1f +(0.5f * Mathf.Sin(Time.time * 1f));
+            transform.position = new Vector3(transform.position.x, y, transform.position.z);
         }
 
     }
@@ -70,8 +78,13 @@ public class rotate_pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && Rotate)
+        if (other.tag == "Player" && Rotate && player.GetComponent<bottlecount>().inhand == false )
         {
+<<<<<<< HEAD
+=======
+            player.GetComponent<bottlecount>().inhand = true;
+            Debug.Log("hit");
+>>>>>>> Thibault
             pickup = true;
             Rotate = false;
         }

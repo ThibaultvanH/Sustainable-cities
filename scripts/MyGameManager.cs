@@ -84,4 +84,8 @@ public class MyGameManager : MonoBehaviour
                 break;
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> Thibault

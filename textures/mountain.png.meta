@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5c2230bd7593bd946a345212d21b4d57
+=======
+guid: d6c2113d9785d624386ea4c0c1046273
+>>>>>>> Thibault
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

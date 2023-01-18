@@ -1,6 +1,7 @@
 fileFormatVersion: 2
 guid: c902e08bd83e04947b6e8d7f31f385be
 TextureImporter:
+<<<<<<< HEAD
   internalIDToNameTable:
   - first:
       213: 2193479657588290036
@@ -20,11 +21,18 @@ TextureImporter:
   - first:
       213: 5136199020975286519
     second: ui-frames_5
+=======
+  internalIDToNameTable: []
+>>>>>>> Thibault
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 0
+=======
+    enableMipMap: 1
+>>>>>>> Thibault
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -51,6 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
     aniso: 1
     mipBias: 0
@@ -61,10 +70,23 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
+=======
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+>>>>>>> Thibault
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -72,6 +94,15 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+=======
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+>>>>>>> Thibault
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -81,6 +112,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+<<<<<<< HEAD
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
@@ -89,6 +121,16 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+>>>>>>> Thibault
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,10 +139,17 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+<<<<<<< HEAD
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+>>>>>>> Thibault
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,10 +158,17 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
+<<<<<<< HEAD
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+>>>>>>> Thibault
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,6 +177,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: ui-frames_0
@@ -252,12 +309,20 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
+=======
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+>>>>>>> Thibault
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable:
       ui-frames_1: -8929440768489705544
       ui-frames_2: 2631046323181635569
@@ -265,6 +330,9 @@ TextureImporter:
       ui-frames_0: 2193479657588290036
       ui-frames_4: 4921545448054487618
       ui-frames_5: 5136199020975286519
+=======
+    nameFileIdTable: {}
+>>>>>>> Thibault
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

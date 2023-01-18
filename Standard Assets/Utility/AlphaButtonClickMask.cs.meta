@@ -1,8 +1,13 @@
 fileFormatVersion: 2
 guid: 971f44ba24a74294294daed00507d80e
+<<<<<<< HEAD
 timeCreated: 1436868016
 licenseType: Store
 MonoImporter:
+=======
+MonoImporter:
+  externalObjects: {}
+>>>>>>> Thibault
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0

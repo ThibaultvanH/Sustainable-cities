@@ -1,8 +1,13 @@
 fileFormatVersion: 2
 guid: fdc378243b95c2144aa66bfc382d1b75
+<<<<<<< HEAD
 timeCreated: 1447332698
 licenseType: Store
 NativeFormatImporter:
+=======
+PrefabImporter:
+  externalObjects: {}
+>>>>>>> Thibault
   userData: 
   assetBundleName: 
   assetBundleVariant: 

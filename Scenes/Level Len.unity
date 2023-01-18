@@ -2590,10 +2590,13 @@ PrefabInstance:
       value: FirstPersonCharacter
       objectReference: {fileID: 0}
     - target: {fileID: 4602092356260569300, guid: fd1068af960c7394d848266c343d56d2, type: 3}
+<<<<<<< HEAD
       propertyPath: cam
       value: 
       objectReference: {fileID: 1141923037}
     - target: {fileID: 4602092356260569300, guid: fd1068af960c7394d848266c343d56d2, type: 3}
+=======
+>>>>>>> Thibault
       propertyPath: manager
       value: 
       objectReference: {fileID: 1959490021}
@@ -2604,11 +2607,14 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 747424054023951308, guid: fd1068af960c7394d848266c343d56d2, type: 3}
   m_PrefabInstance: {fileID: 1141923035}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!20 &1141923037 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 747424054428856320, guid: fd1068af960c7394d848266c343d56d2, type: 3}
   m_PrefabInstance: {fileID: 1141923035}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Thibault
 --- !u!114 &1141923045
 MonoBehaviour:
   m_ObjectHideFlags: 0
