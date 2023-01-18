@@ -2786,11 +2786,8 @@ GameObject:
   - component: {fileID: 1790920912}
   - component: {fileID: 1790920913}
   - component: {fileID: 1790920914}
-<<<<<<< HEAD
   - component: {fileID: 1790920916}
   - component: {fileID: 1790920915}
-=======
->>>>>>> Thibault
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2825,11 +2822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bddaa50f3584346b1ba66472faf5fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   Player: {fileID: 747424054041468276}
-=======
-  Player: {fileID: 0}
->>>>>>> Thibault
   playingCanvas: {fileID: 170992103}
   pausedCanvas: {fileID: 848442239}
   finishedCanvas: {fileID: 1152738581}
@@ -2848,7 +2841,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newMaterial: {fileID: 2100000, guid: b48bc822a7607334790507d088d0f956, type: 2}
-<<<<<<< HEAD
   ignoreTag: Player
 --- !u!114 &1790920915
 MonoBehaviour:
@@ -2878,9 +2870,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newMaterial: {fileID: 2100000, guid: b48bc822a7607334790507d088d0f956, type: 2}
   ignoreTag: pickup
-=======
-  oldmaterial: {fileID: 2100000, guid: 2b2e27f5882fa6344b39afb0039e7ad9, type: 2}
->>>>>>> Thibault
 --- !u!1001 &1821820303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3654,14 +3643,11 @@ PrefabInstance:
     - {fileID: 6009134007327353655, guid: fd1068af960c7394d848266c343d56d2, type: 3}
     - {fileID: 7904561031844511764, guid: fd1068af960c7394d848266c343d56d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd1068af960c7394d848266c343d56d2, type: 3}
-<<<<<<< HEAD
 --- !u!1 &747424054041468276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 747424054023951308, guid: fd1068af960c7394d848266c343d56d2, type: 3}
   m_PrefabInstance: {fileID: 747424054041468275}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> Thibault
 --- !u!143 &747424054041468280 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 747424054023951284, guid: fd1068af960c7394d848266c343d56d2, type: 3}

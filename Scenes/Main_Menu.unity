@@ -313,11 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b1bec2f66a10c499a412bc22db375d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   mLevelToLoad: Level Thibault
-=======
-  mLevelToLoad: level Joeri
->>>>>>> Thibault
 --- !u!1 &2045613708
 GameObject:
   m_ObjectHideFlags: 0
