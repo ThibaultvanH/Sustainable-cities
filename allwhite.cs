@@ -9,6 +9,7 @@ public class allwhite : MonoBehaviour
     GameObject[] objects;
 
     public GameObject arrow;
+   
     public GameObject points;
 
     // Start is called before the first frame update
@@ -148,7 +149,9 @@ public class allwhite : MonoBehaviour
         if (closestBottle != null)
         {
             arrow.SetActive(true);
-            arrow.transform.LookAt(closestBottle.transform);
+            arrow.transform.LookAt(closestBottle.transform );
+            
+
         }
         // If there is no closest bottle, make the arrow invisible
         else
