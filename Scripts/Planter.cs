@@ -23,27 +23,28 @@ public class Planter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Checks to see if the tree is planted
         if (planted)
         {
             if(!spawned)
             {
-                
+                // If the tree is planted but hasnt spawned yet it will clone a tree under the map, put its scale as 1% of itself and put the spawned and growing booleans to true
                 clonedSapling = Instantiate(sapling, spawnPos.position, Quaternion.identity);
                 clonedSapling.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
                 spawned = true;
                 growing = true;
-                Inventory.AddPoint();
+                Inventory.AddPoint(); // Adds a point to the score which is kept in the inventory class
             }
             else if(growing)
             {
-                StartCoroutine(GrowCoroutine());
+                StartCoroutine(GrowCoroutine()); // starts the growing process of the planted tree
             }
         }
     }
 
     IEnumerator GrowCoroutine(){
         var num = Random.Range(5, 20);
-        yield return new WaitForSeconds(num);
+        yield return new WaitForSeconds(num); // waits for 5 to 20 seconds to scale up the tree to its original size
 
         clonedSapling.transform.localScale = new Vector3(1f, 1f, 1f);
         growing = false;
@@ -51,17 +52,17 @@ public class Planter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player") // checks if the player entered the trigger
         {
             try 
             {
+                planted = true;
                 Inventory.RemoveSapling();
                 Debug.Log("planted");
-                planted = true;
             } 
             catch (System.Exception exc)
             {
-                Debug.Log(exc.Message);
+                Debug.Log(exc.Message); // the only exception is the sapling exception
             }
         }
     }

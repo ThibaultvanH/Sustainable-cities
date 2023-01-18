@@ -17,7 +17,7 @@ public class allwhite : MonoBehaviour
         {
             // Check if the object has a renderer component
             Renderer renderer = obj.GetComponent<Renderer>();
-            if (renderer != null && obj.tag != ignoreTag)
+            if (renderer != null && obj.tag != ignoreTag) // ckecks to see if the object should be ignored or not
             {
                 // Assign the new material to the renderer
                 renderer.material = newMaterial;

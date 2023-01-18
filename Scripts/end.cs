@@ -11,12 +11,14 @@ public class end : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        obj = FindObjectsOfType<GameObject>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        obj = FindObjectsOfType<GameObject>();
+        // applies textures to the objects if 10/20/30/... % of sapligns are planted
         switch (Inventory.GetScore())
         {
             case 1:
