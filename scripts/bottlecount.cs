@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
 using UnityEngine.UI;
+
 
 public class bottlecount : MonoBehaviour
 {
     public int count = 0;
+    public bool inhand = false;
     public GameObject txt;
+    public GameObject gamemanager;
     
     // Start is called before the first frame update
     void Start()
@@ -19,6 +21,10 @@ public class bottlecount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count;
+        if (count == 5)
+        {
+            MyGameManager.hasfinished = 1;
+        }
+        txt.GetComponent<TextMeshProUGUI>().text = "Bottles in the trash: " + count + "/5";
     }
 }
