@@ -13,9 +13,10 @@ public class allwhite1 : MonoBehaviour
     public GameObject points;
 
     // Start is called before the first frame update
+    //in the start func all gameobjects will turn white.
     void Start()
     {
-         objects = FindObjectsOfType<GameObject>();
+         objects = FindObjectsOfType<GameObject>(); // get all gameobjects in the scene
 
 
         // Iterate over all objects
@@ -26,7 +27,7 @@ public class allwhite1 : MonoBehaviour
             // Check if the object has a renderer component
             Renderer renderer = obj.GetComponent<Renderer>();
             if (renderer != null && obj.tag != "bottle" && obj.tag != "trash" && obj.tag != "Player")
-            {
+            { 
                 originalMaterials = renderer.material;
                 Debug.Log(renderer.material.name);
                 // Assign the new material to the renderer
@@ -46,14 +47,14 @@ public class allwhite1 : MonoBehaviour
         
         }
 
-    void bottledeposit()
+    void bottledeposit() // in this function the function is checking howmany bottles the player had put in the trash 
     {
         
         switch (points.GetComponent<bottlecount>().count)
         {
             case 0:
                 break;
-            case 1:
+            case 1: // when he deposits 1 bottle the trees will have color
                 for (int i = 0; i < objects.Length; i++)
                 {
                     if (objects[i] != null)
@@ -66,7 +67,7 @@ public class allwhite1 : MonoBehaviour
                     
                 }
                 break;
-            case 2:
+            case 2:// when he deposits 2 bottles the other trees will have color
                 for (int i = 0; i < objects.Length; i++)
                 {
                     if (objects[i] != null)
@@ -78,7 +79,7 @@ public class allwhite1 : MonoBehaviour
                     }
                 }
                 break;
-            case 3:
+            case 3:// when he deposits 3 bottles the houses will have color
                 for (int i = 0; i < objects.Length; i++)
                 {
                     if (objects[i] != null)
@@ -90,7 +91,7 @@ public class allwhite1 : MonoBehaviour
                     }
                 }
                 break;
-            case 4:
+            case 4:// when he deposits 4 bottles the roads will have color
                 for (int i = 0; i < objects.Length; i++)
                 {
                     if (objects[i] != null)
@@ -102,7 +103,7 @@ public class allwhite1 : MonoBehaviour
                     }
                 }
                 break;
-            case 5:
+            case 5:// when he deposits 5 bottles everything will have his color back
                 for (int i = 0; i < objects.Length; i++)
                 {
                     if (objects[i] != null && objects[i].GetComponent<Renderer>() != null && objects[i].GetComponent<Renderer>().tag != "bottle" && objects[i].GetComponent<Renderer>().tag != "trash" && objects[i].GetComponent<Renderer>().tag != "Player")
@@ -117,7 +118,7 @@ public class allwhite1 : MonoBehaviour
         
     }
 
-    private void findClossestBottle()
+    private void findClossestBottle() // this function controlles the arrow 
     {
         GameObject[] bottles = GameObject.FindGameObjectsWithTag("bottle");
 
@@ -128,13 +129,13 @@ public class allwhite1 : MonoBehaviour
         GameObject closestBottle = null;
 
         foreach (GameObject bottle in bottles)
-        {
+        { // finding the clossest bottle
             
-            float distance = Vector3.Distance(transform.position, bottle.transform.position);
+            float distance = Vector3.Distance(transform.position, bottle.transform.position); // calculating the clossest bottle
 
             
             if (distance < minDistance)
-            {
+            { 
                 minDistance = distance;
                 closestBottle = bottle;
                 
@@ -148,7 +149,7 @@ public class allwhite1 : MonoBehaviour
         if (closestBottle != null)
         {
             arrow.SetActive(true);
-            arrow.transform.LookAt(closestBottle.transform );
+            arrow.transform.LookAt(closestBottle.transform );// pointing the arrow to the clossest bottle
             
 
         }
